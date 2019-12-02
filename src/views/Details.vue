@@ -28,7 +28,6 @@ export default {
   },
   computed: {
     brand() {
-      console.log(store.state.brand.state_registrations)
       return store.state.brand
     },
   }

@@ -10,7 +10,7 @@ export default new Vuex.Store({
     brand: {}
   },
   getters: {
-    getBrand: state => {
+    getBrand: () => {
       var request = new XMLHttpRequest();
 
       request.open('GET', 'https://private-anon-56618cc692-brewoptixv2.apiary-mock.com/brands/{state.entityId}');

@@ -30,13 +30,11 @@ export default {
   components: {},
   computed: {
     brands() {
-      console.log(store.state.brands)
       return store.state.brands
     }
   },
   methods: {
     itemClicked: brand => {
-      console.log(brand.name);
       window.location.href = `/#/details/${brand.entity_id}`
     }
   }
